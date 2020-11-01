@@ -24,7 +24,9 @@ class PosterWidget extends React.Component {
         }
         const imgStyle = {
             width: '100%',
-            height: '100%'
+            height: '100%',
+            border:'10px solid #61dafb',
+            borderRadius: '5px'
         }
         if (this.api_key) {
             return (

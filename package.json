@@ -5,7 +5,10 @@
   "main": "react-poster-custom-element-wrapper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "t_react": "terser lib/react-poster-widget.js -o lib/react-poster-widget.min.js -c -m",
+    "t_customEl": "terser lib/react-poster-custom-element-wrapper.js -o lib/react-poster-custom-element-wrapper.min.js -c -m",
+    "build": "babel src -d lib && npm run t_react && npm run t_customEl",
+    "serve":"npm run build && serve"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,8 @@
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1"
+    "@babel/preset-react": "^7.12.1",
+    "serve": "^11.3.2",
+    "terser": "^5.3.8"
   }
 }
