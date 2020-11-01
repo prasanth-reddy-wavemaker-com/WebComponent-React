@@ -46,7 +46,6 @@
         let custEl = document.querySelector('poster-widget-react');
         let counter = 0;
         setInterval(() => {
-            console.log(`* ${counter}`);
             custEl.setAttribute('title', titles[counter++]);
             counter %= titles.length;
         }, 3000);
