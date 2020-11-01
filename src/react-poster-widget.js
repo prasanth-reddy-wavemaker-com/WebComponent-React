@@ -4,7 +4,7 @@ class PosterWidget extends React.Component {
         this.state = { img: '*' }
     }
     // ######### Update OMDB API_KEY value here #######
-    api_key = null;
+    api_key = '<API_KEY_VALUE>';
     
     api_url = `http://www.omdbapi.com/?apikey=${this.api_key}&t=`;
     componentDidMount() {

@@ -1,0 +1,27 @@
+{
+  "name": "webcomponent-react",
+  "version": "1.0.0",
+  "description": "Sample project to demonstrate CustomElement wrapping for React Components",
+  "main": "react-poster-custom-element-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subodhkumarWM/WebComponent-React.git"
+  },
+  "author": "Subodh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subodhkumarWM/WebComponent-React/issues"
+  },
+  "homepage": "https://github.com/subodhkumarWM/WebComponent-React#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1"
+  }
+}
